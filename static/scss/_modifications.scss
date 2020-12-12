@@ -1,0 +1,21 @@
+.navbar {
+    justify-content: space-between !important;
+    @extend %backAndText;
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+
+    li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+footer{
+    @extend %backAndText;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

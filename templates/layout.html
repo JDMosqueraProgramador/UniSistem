@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title> {% block title %} {% endblock %} </title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                UNIAPP
+            </div>
+            <ul class="navbar-nav collapse.navbar-collapse d-flex">
+                <li class="nav-item px-2"><a class="nav-link" href="#">Carreras</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="#">Quienes somos</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="#">Iniciar sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %} {% endblock %}
+    
+    <footer>JDMM &copy;</footer>
+</body>
+</html>
